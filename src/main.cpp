@@ -21,6 +21,7 @@
 #include <cv_bridge/cv_bridge.h>
 #include <sensor_msgs/image_encodings.h>
 #include <sensor_msgs/Image.h>
+#include <vector>
 
 using namespace std;
 using namespace cv;
@@ -117,7 +118,7 @@ int main(int argc, char **argv)
 
     SurfFeatureDetector detector( 400 );
     SurfDescriptorExtractor extractor;
-    FlannBasedMatcher matcher;
+    FlannBasedMatcher matcher;//deneme bir
 
     vector<KeyPoint>previousKey;
     cap >> prev;//get the first frame.ch
